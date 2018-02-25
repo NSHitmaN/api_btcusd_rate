@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Current BTCUSD rate</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <section class="top-bar-section">
+            <ul class="right">
+                {% if username %}
+                    <li><a href="/auth/logout/">Log out ({{ username }})</a></li>
+                {% else %}
+                    <li><a href="/auth/login/">Log in</a></li>
+                {% endif %}
+            </ul>
+        </section>
+    </div>
+    <div class="row">
+        {{ total_avg }}
+    </div>
+</body>
+</html>
